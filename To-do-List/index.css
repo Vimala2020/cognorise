@@ -1,0 +1,166 @@
+/* Resetting default margins, padding, and setting box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variables for theming */
+:root {
+    --background: #1a1a2e; /* Dark navy blue background color */
+    --secondaryBackground: #e5e5e5 ; /* Darker blue for containers */
+    --text: #16213e; /* Light gray text color */
+    --purple: #6a5acd;
+    --teal: #20b2aa;
+}
+
+/* Styling for the body with a 3D effect */
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    perspective: 1000px; /* Add perspective to create a 3D effect */
+}
+
+/* Styling for the stats container with 3D effect */
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--secondaryBackground);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D box shadow */
+    transform: rotateX(10deg); /* Slight rotation for 3D effect */
+}
+
+/* Styling for the details section */
+.details {
+    text-align: left;
+}
+
+/* Progress bar container */
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--purple);
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Inner shadow for 3D effect */
+}
+
+/* Progress bar fill */
+#progress {
+    width: 66%;
+    height: 100%;
+    background-color: var(--teal);
+}
+
+/* Styling for the stats numbers with 3D effect */
+.stats-number {
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 14px;
+    background-color: #fff;
+    color: #000430;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 3D box shadow */
+}
+
+/* Task input field */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: var(--secondaryBackground);
+    color: var(--text);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* Inner shadow for 3D effect */
+}
+
+/* Submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--purple);
+    color: var(--text);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 3D box shadow */
+}
+
+/* Styling for the task list with 3D effect */
+.task-list {
+    width: 100%;
+    max-width: 400px;
+    list-style: none;
+    background-color: var(--secondaryBackground);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D box shadow */
+    transform: rotateX(10deg); /* Slight rotation for 3D effect */
+    margin-top: 20px; /* Space between the form and the task list */
+}
+
+/* Styling each task item */
+.task-list li {
+    background-color: #fff; /* Background color for each task */
+    color: var(--text);
+    padding: 15px; /* Padding inside each task box */
+    border-radius: 8px; /* Rounded corners for task box */
+    margin-bottom: 10px; /* Space between tasks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease; /* Smooth transition on hover */
+}
+
+/* Task item hover effect for better interactivity */
+.task-list li:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Styling for the task input form */
+form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Box shadow for 3D effect */
+}
+
+
+/* Image container styling */
+.image-container {
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Task image styling with 3D effect */
+.task-image {
+    max-width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D box shadow */
+    transform: scale(1.05); /* Slight scaling for 3D effect */
+}

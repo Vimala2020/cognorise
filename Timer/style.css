@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+.countdown_container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.time_box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+    transition: transform 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.time_box:hover {
+    transform: scale(1.1) translateZ(10px);
+}
+
+.number {
+    font-size: 3em;
+    display: block;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.label {
+    font-size: 1em;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#target-date {
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff5722;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #e64a19;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+}
